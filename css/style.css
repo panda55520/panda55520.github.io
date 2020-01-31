@@ -507,7 +507,7 @@ div.ac > ul > li:before,
   content: "\e98b";
 }
 .full-toc .full .min:hover::before {
-  color: #f00;
+  color: #42b983;
 }
 .full-toc .full .max:before {
   float: left;
@@ -515,7 +515,7 @@ div.ac > ul > li:before,
   content: "\e98c";
 }
 .full-toc .full .max:hover::before {
-  color: #f00;
+  color: #42b983;
 }
 .full-toc .post-toc-menu {
   display: block;
@@ -550,7 +550,7 @@ div.ac > ul > li:before,
   content: "\e9ba";
 }
 .full-toc .post-toc-menu-icons:hover::before {
-  color: #f00;
+  color: #42b983;
 }
 .full-toc .post-toc {
   width: 400px;
@@ -614,7 +614,7 @@ div.ac > ul > li:before,
   opacity: 1;
 }
 .full-toc #rocket:hover::before {
-  color: #f00;
+  color: #42b983;
 }
 .full-toc #rocket:before {
   content: "\e902";
@@ -632,7 +632,7 @@ div.ac > ul > li:before,
   position: absolute;
   bottom: 0px;
   right: -4px;
-  color: #f00;
+  color: #42b983;
 }
 .full-toc #rocket.launch:after {
   content: "\e9a9";
@@ -640,7 +640,7 @@ div.ac > ul > li:before,
   right: 9px;
   bottom: -16px;
   font-size: 21px;
-  color: #f00;
+  color: #42b983;
 }
 .nav-left {
   width: 120px;
@@ -1301,7 +1301,7 @@ div.ac > ul > li:before,
   text-shadow: none;
 }
 .post .pjax {
-  max-width: 900px;
+  max-width: 1200px;
   min-height: calc(100vh - 143px);
   margin: 0 auto;
   overflow-y: auto;
@@ -1574,17 +1574,13 @@ div.ac > ul > li:before,
   background-color: #5db084;
 }
 .post .pjax article table.green_title tr th {
-  color: #eee;
-  border: 1px solid #009688;
-  background-color: #009688;
+  color: #fff;
+  border: 1px solid #ddd;
+  background-color: #100f14;
 }
 .post .pjax article :not(pre) > code {
   color: #bf1827;
   font-family: sans-serif;
-}
-.post .pjax article pre.mermaid {
-  border: none;
-  text-align: center;
 }
 .post .pjax article pre > code {
   font-size: 15px;
@@ -1657,16 +1653,16 @@ div.ac > ul > li:before,
 .post .article_copyright {
   padding: 5px 30px;
   margin-bottom: 20px;
-  background-color: #6190e8;
+  background-color: #42b983;
   border-radius: 8px;
+  font-weight: 700;
   line-height: 22px;
   color: #100f14;
   font-size: 16px;
 }
 .post .article_copyright .copy-title {
-  color: #100f14;
+  color: #000;
   margin-right: 10px;
-  font-weight: 700;
 }
 .post .article_copyright>p {
   margin: 0;
@@ -1678,7 +1674,6 @@ div.ac > ul > li:before,
 }
 .post .article_copyright a:hover {
   text-decoration: underline;
-  font-weight: 700;
 }
 html,
 body {
