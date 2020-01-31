@@ -1,0 +1,167 @@
+<!-- .slide -->
+
+<h1 id="Slide-example"><a href="#Slide-example" class="headerlink" title="Slide example"></a>Slide example</h1><p><span><!-- .element: class="fragment highlight-green"-->reveal-md PTT_SAMPLE.md –static PTT_SAMPLE</span></p>
+<hr>
+<!-- .slide -->
+<h2 id="Fragments"><a href="#Fragments" class="headerlink" title="Fragments"></a>Fragments</h2><p><code>&lt;!-- .element: class=&quot;fragment&quot; data-fragment-index=&quot;1&quot; --&gt;</code></p>
+<p>![](<a href="https://i.imgur.com/Ov8F3IV.png" target="_blank" rel="noopener">https://i.imgur.com/Ov8F3IV.png</a> =450x)</p>
+<p>Is the fragment syntax</p>
+<p>Hit the next arrow…</p>
+<p>Choose <i class="fa fa-tv"></i> <strong>Slide Mode</strong> in the top right sharing <i class="fa fa-share-alt fa-18"></i> menu and hit “<strong>Preview</strong>“ to see your slide.</p>
+<p>… to step through …</p>
+<p><span>… a<!-- .element: class="fragment" data-fragment-index="1" --></span> <span>fragmented<!-- .element: class="fragment" data-fragment-index="2" --></span> <span>slide.<!-- .element: class="fragment" data-fragment-index="3" --></span></p>
+<p>Note:<br>  This slide has fragments which are also stepped through in the notes window.</p>
+<hr>
+<!-- .slide -->
+<h2 id="Fragment-Styles"><a href="#Fragment-Styles" class="headerlink" title="Fragment Styles"></a>Fragment Styles</h2><p>There are different types of fragments, like:</p>
+<p>grow</p>
+<p>shrink</p>
+<p>fade-out</p>
+<p>fade-up (also down, left and right!)</p>
+<p>current-visible</p>
+<p>Highlight <span><!-- .element: class="fragment highlight-red" -->red</span> <span><!-- .element: class="fragment highlight-blue" -->blue</span> <span><!-- .element: class="fragment highlight-green"-->green</span></p>
+<hr>
+<!-- .slide: data-transition="zoom" -->
+
+<h2 id="Transition-Styles"><a href="#Transition-Styles" class="headerlink" title="Transition Styles"></a>Transition Styles</h2><p>Different background transitions are available via the transition option. This one’s called “zoom”.</p>
+<p><code>&lt;!-- .slide: data-transition=&quot;zoom&quot; --&gt;</code></p>
+<p>Is the transition syntax</p>
+<p>You can use:</p>
+<p>none/fade/slide/convex/concave/zoom</p>
+<hr>
+<!-- .slide: data-transition="fade-in convex-out" -->
+
+<p><code>&lt;!-- .slide: data-transition=&quot;fade-in convex-out&quot; --&gt;</code></p>
+<p>Also, you can set different in/out transition</p>
+<p>You can use:</p>
+<p>none/fade/slide/convex/concave/zoom</p>
+<p>postfix with <code>-in</code> or <code>-out</code></p>
+<hr>
+<!-- .slide: data-transition-speed="fast" -->
+
+<p><code>&lt;!-- .slide: data-transition-speed=&quot;fast&quot; --&gt;</code></p>
+<p>Custom the transition speed!</p>
+<p>You can use:</p>
+<p>default/fast/slow</p>
+<hr>
+<h2 id="Themes"><a href="#Themes" class="headerlink" title="Themes"></a>Themes</h2><p>reveal.js comes with a few themes built in:</p>
+<p>Black (default) - White - League - Sky - Beige - Simple</p>
+<p>Serif - Blood - Night - Moon - Solarized</p>
+<p>It can be set in YAML slideOptions</p>
+<hr>
+<!-- .slide: data-background="#1A237E" -->
+
+<p><code>&lt;!-- .slide: data-background=&quot;#1A237E&quot; --&gt;</code></p>
+<p>Is the background syntax</p>
+<hr>
+<!-- .slide: data-background="https://s3.amazonaws.com/hakim-static/reveal-js/image-placeholder.png" data-background-color="#005" -->
+
+<div style="color: #fff;">
+
+<h2 id="Image-Backgrounds"><a href="#Image-Backgrounds" class="headerlink" title="Image Backgrounds"></a>Image Backgrounds</h2><p><code>&lt;!-- .slide: data-background=&quot;image.png&quot;--&gt;</code></p>
+</div>
+
+<hr>
+<!-- .slide: data-background="https://s3.amazonaws.com/hakim-static/reveal-js/image-placeholder.png" data-background-repeat="repeat" data-background-size="100px" data-background-color="#005" -->
+
+<div style="color: #fff;">
+
+<h2 id="Tiled-Backgrounds"><a href="#Tiled-Backgrounds" class="headerlink" title="Tiled Backgrounds"></a>Tiled Backgrounds</h2><p><code>&lt;!-- .slide: data-background=&quot;image.png&quot; data-background-repeat=&quot;repeat&quot; data-background-size=&quot;100px&quot; --&gt;</code></p>
+</div>
+
+<hr>
+<!-- .slide: data-background-video="https://s3.amazonaws.com/static.slid.es/site/homepage/v1/homepage-video-editor.mp4,https://s3.amazonaws.com/static.slid.es/site/homepage/v1/homepage-video-editor.webm" data-background-color="#000000" -->
+
+<div style="background-color: rgba(0, 0, 0, 0.9); color: #fff; padding: 20px;">
+
+<h2 id="Video-Backgrounds"><a href="#Video-Backgrounds" class="headerlink" title="Video Backgrounds"></a>Video Backgrounds</h2><p><code>&lt;!-- .slide: data-background-video=&quot;video.mp4,video.webm&quot; --&gt;</code></p>
+</div>
+
+<hr>
+<!-- .slide: data-background="http://i.giphy.com/90F8aUepslB84.gif" -->
+
+<h2 id="…-and-GIFs"><a href="#…-and-GIFs" class="headerlink" title="… and GIFs!"></a>… and GIFs!</h2><hr>
+<h2 id="Pretty-Code"><a href="#Pretty-Code" class="headerlink" title="Pretty Code"></a>Pretty Code</h2><pre><code class="javascript"><span class="function"><span class="keyword">function</span> <span class="title">linkify</span>(<span class="params"> selector </span>) </span>{
+  <span class="keyword">if</span>( supports3DTransforms ) {
+
+    <span class="keyword">const</span> nodes = <span class="built_in">document</span>.querySelectorAll( selector );
+
+    <span class="keyword">for</span>( <span class="keyword">const</span> i = <span class="number">0</span>, len = nodes.length; i &lt; len; i++ ) {
+      <span class="keyword">var</span> node = nodes[i];
+
+      <span class="keyword">if</span>( !node.className ) {
+        node.className += <span class="string">' roll'</span>;
+      }
+    }
+  }
+}</code></pre>
+<p>Code syntax highlighting courtesy of <a href="http://softwaremaniacs.org/soft/highlight/en/description/" target="_blank" rel="noopener">highlight.js</a>.</p>
+<hr>
+<h2 id="Marvelous-List"><a href="#Marvelous-List" class="headerlink" title="Marvelous List"></a>Marvelous List</h2><ul>
+<li>No order here</li>
+<li>Or here</li>
+<li>Or here</li>
+<li>Or here</li>
+</ul>
+<hr>
+<h2 id="Fantastic-Ordered-List"><a href="#Fantastic-Ordered-List" class="headerlink" title="Fantastic Ordered List"></a>Fantastic Ordered List</h2><ol>
+<li>One is smaller than…</li>
+<li>Two is smaller than…</li>
+<li>Three!</li>
+</ol>
+<hr>
+<h2 id="Tabular-Tables"><a href="#Tabular-Tables" class="headerlink" title="Tabular Tables"></a>Tabular Tables</h2><table>
+<thead>
+<tr>
+<th>Item</th>
+<th>Value</th>
+<th>Quantity</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>Apples</td>
+<td>$1</td>
+<td>7</td>
+</tr>
+<tr>
+<td>Lemonade</td>
+<td>$2</td>
+<td>18</td>
+</tr>
+<tr>
+<td>Bread</td>
+<td>$3</td>
+<td>2</td>
+</tr>
+</tbody></table>
+<hr>
+<h2 id="Clever-Quotes"><a href="#Clever-Quotes" class="headerlink" title="Clever Quotes"></a>Clever Quotes</h2><blockquote>
+<p>“For years there has been a theory that millions of monkeys typing at random on millions of typewriters would reproduce the entire works of Shakespeare. The Internet has proven this theory to be untrue.”</p>
+</blockquote>
+<hr>
+<h2 id="Intergalactic-Interconnections"><a href="#Intergalactic-Interconnections" class="headerlink" title="Intergalactic Interconnections"></a>Intergalactic Interconnections</h2><p>You can link between slides internally, <a href="#/1/3">like this</a>.</p>
+<hr>
+<h2 id="Speaker"><a href="#Speaker" class="headerlink" title="Speaker"></a>Speaker</h2><p>There’s a <a href="https://github.com/hakimel/reveal.js#speaker-notes" target="_blank" rel="noopener">speaker view</a>. It includes a timer, preview of the upcoming slide as well as your speaker notes.</p>
+<p>Press the <em>S</em> key to try it out.</p>
+<p>Note:<br>  Oh hey, these are some notes. They’ll be hidden in your presentation, but you can see them if you open the speaker notes window (hit <code>s</code> on your keyboard).</p>
+<hr>
+<h2 id="Take-a-Moment"><a href="#Take-a-Moment" class="headerlink" title="Take a Moment"></a>Take a Moment</h2><p>Press <code>B</code> or <code>.</code> on your keyboard to pause the presentation. This is helpful when you’re on stage and want to take distracting slides off the screen.</p>
+<hr>
+<h2 id="Spotlight"><a href="#Spotlight" class="headerlink" title="Spotlight"></a>Spotlight</h2><p>Enable with <code>slideOptions.spotlight.enabled: true</code> in YAML frontmatter</p>
+<pre><code class="yaml"><span class="meta">---</span>
+<span class="attr">slideOptions:</span>
+  <span class="attr">spotlight:</span>
+    <span class="attr">enabled:</span> <span class="literal">true</span>
+<span class="meta">---</span></code></pre>
+<hr>
+<h3 id="Demo"><a href="#Demo" class="headerlink" title="Demo"></a>Demo</h3><p><img src="https://i.imgur.com/dXhHcCP.gif" alt="spotlight"></p>
+<hr>
+<h2 id="Slides-Timer"><a href="#Slides-Timer" class="headerlink" title="Slides Timer"></a>Slides Timer</h2><p>Enable with <code>slideOptions.allottedMinutes = {? minutes}</code> in YAML frontmatter</p>
+<pre><code class="yaml"><span class="meta">---</span>
+<span class="attr">slideOptions:</span>
+  <span class="attr">allottedMinutes:</span> <span class="number">5</span>
+<span class="meta">---</span></code></pre>
+<hr>
+<h3 id="Demo-1"><a href="#Demo-1" class="headerlink" title="Demo"></a>Demo</h3><p><img src="https://i.imgur.com/l5Akz4B.gif" alt="Timer"></p>
+<hr>
+<h1 id="The-End"><a href="#The-End" class="headerlink" title="The End"></a>The End</h1>
