@@ -4,7 +4,7 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
 
-    <title>reveal-md</title>
+    <title>Hexo</title>
     <link rel="stylesheet" href="./css/reveal.css" />
     <link rel="stylesheet" href="./css/theme/blood.css" id="theme" />
     <link rel="stylesheet" href="./css/highlight/zenburn.css" />
@@ -12,17 +12,20 @@
 
     <style>
     .logo-tortoisegit{
-      width: 780px;
-      height: 135px;
-      background: url(https://tortoisegit.org/images/logo.svgz) no-repeat center;
-      background-color: #fff;
-      margin:0 auto;
+        width: 780px;
+        height: 135px;
+        background: url(https://tortoisegit.org/images/logo.svgz) no-repeat center;
+        background-color: #fff;
+        margin:0 auto;
     }
     </style>
+
   <meta name="generator" content="Hexo 4.1.1"></head>
   <body>
     <div class="reveal">
-      <div class="slides"><section  data-markdown><script type="text/template"><!-- .slide -->
+      <div class="slides"><section  data-markdown><script type="text/template">
+
+<!-- .slide -->
 # Create a Blog📝
 ## by Hexo + GitHub Pages
 </script></section><section ><section data-markdown><script type="text/template">
@@ -81,6 +84,17 @@ Practice Git and Markdown
 <a href="https://tortoisegit.org/" target="_blank" rel="noopener">
 <div class="logo-tortoisegit"></div>
 </a>
+<!--
+<style>
+.logo-tortoisegit{
+  width: 780px;
+  height: 135px;
+  background: url(https://tortoisegit.org/images/logo.svgz) no-repeat center;
+  background-color: #fff;
+  margin:0 auto;
+}
+</style>
+-->
 <img src="./HexoImg/Part2/0.jpg">
 </script></section><section data-markdown><script type="text/template">
 <!-- .slide -->
@@ -169,7 +183,8 @@ digraph G {
 <img src="./HexoImg/Part2/14.jpg">
 </script></section></section><section ><section data-markdown><script type="text/template">
 <!-- .slide -->
-## [Extensions] Change Theme
+### [Extensions]
+## Change Theme
 
 <img src='http://www.plantuml.com/plantuml/png/SoWkIImgAStDuL98oKmlIYp8K71NgEPIK51moibFLz2rKt3FBF4eJR862a6P846Fr8fyi518Hcfkga9qSKbbJgfjIc9nHcgAJd9-JdwHRL5gIYnCLs9EDh8Qg0pO5A1f44EGHQ1w43Q0n5nI2tBoAv6CH16ivN98pKi1UWG0'/>
 <!--
@@ -194,7 +209,9 @@ digraph G {
 <img src="./HexoImg/Part3/2.jpg">
 </script></section></section><section ><section data-markdown><script type="text/template">
 <!-- .slide -->
-## [Extensions] Add Gitalk
+### [Extensions]
+## Add Gitalk
+### (Message Board)
 
 <img src='http://www.plantuml.com/plantuml/png/SoWkIImgAStDuL98oKmlIYp8K71NgEPIK51moibFLz2rKt3FBF4eJR862a6P846Fr8fyi518Hcfkga9qSKbbJgfjIc9nHcfAB4njOausgenESdvEVf5j4LGDs1IWQH13a4MWkX4sWCHSKWjoyYkH34SHhELoICrB0Ne40000'/>
 <!--
@@ -230,7 +247,13 @@ digraph G {
 <!-- .slide -->
 ## Set Config Gitalk Authorization
 <img src="./HexoImg/Part3/8.jpg">
-</script></section></section></div>
+</script></section></section><section  data-markdown><script type="text/template">
+<!-- .slide -->
+## Thank you!
+❤️If you like the blog share it with your friends.
+
+💬If you have any questions, please let me know.
+</script></section></div>
     </div>
 
     <script src="./js/reveal.js"></script>
@@ -263,8 +286,7 @@ digraph G {
       var defaultOptions = {
         controls: true,
         progress: true,
-        slideNumber: true,
-        history: false,
+        history: true,
         center: true,
         transition: 'default', // none/fade/slide/convex/concave/zoom
         dependencies: deps
@@ -273,7 +295,7 @@ digraph G {
       // options from URL query string
       var queryOptions = Reveal.getQueryHash() || {};
 
-      var options = extend(defaultOptions, {}, queryOptions);
+      var options = extend(defaultOptions, {"slideNumber":true}, queryOptions);
     </script>
 
 
