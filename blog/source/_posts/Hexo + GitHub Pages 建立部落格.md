@@ -1,6 +1,6 @@
 ---
 title: Hexo + GitHub Pages 建立部落格
-date: 2019/01/30 15:51:50
+date: 2020/01/30 15:51:50
 categories:
 - 宅宅工程師
 tags:
@@ -19,7 +19,7 @@ tags:
 |O|投影片預覽|
 |S|簡報者檢視畫面
 
-<iframe src="../../../../ppt/Hexo/Hexo.html" width="99%" height="700" style="border-color:#100f14;border-width:3px;border-style:solid;"> </iframe>
+<iframe src="../../../../ppt/Hexo/Hexo.html" width="80%" height="99%" style="border-color:#100f14;border-width:3px;border-style:solid;"> </iframe>
 
 ## [懶人包]
 
@@ -34,6 +34,7 @@ tags:
 Git Clone `{yourName}.github.io`至 `{localPath}`本機目錄，打開Git命令視窗(Git Bash Here)，逐步執行指令。
 ```
 git --version                           #檢查git安裝是否完成(可省略)
+npm --version                           #檢查npm安裝是否完成(可省略)
 npm --version                           #檢查npm安裝是否完成(可省略)
 npm install hexo-cli --global           #安裝hexo(--global參數 : 安装套件會放在/user/local)
 hexo --version                          #檢查hexo安裝是否完成(可省略)
