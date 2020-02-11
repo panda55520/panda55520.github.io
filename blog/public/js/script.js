@@ -402,7 +402,7 @@ $(function () {
     });
     container.scroll(function (e) {
         if (container.scrollTop() >= 200 && $("#rocket").css("display") == "none") {
-            $("#rocket").removeClass("launch").css("display", "block").css("opacity", "0.7");
+            $("#rocket").removeClass("launch").css("display", "block").css("opacity", "1");
         } else if (container.scrollTop() < 200 && $("#rocket").css("display") == "block") {
             $("#rocket").removeClass("launch").css("opacity", "1").css("display", "none");
         }
