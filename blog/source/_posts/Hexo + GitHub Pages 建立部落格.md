@@ -11,15 +11,20 @@ tags:
 - gitalk
 ---
 
-## [簡報檔]
-
-|快捷鍵|動作|
-|---|---|
-|F|全螢幕放映|
-|O|投影片預覽|
-|S|簡報者檢視畫面
-
-<iframe src="../../../../ppt/Hexo/Hexo.html" width="80%" height="99%" style="border-color:#100f14;border-width:3px;border-style:solid;"> </iframe>
+## [簡報檔] <td  colspan = '4'><a href="../../../../ppt/Hexo/Hexo.html" target='_blank'>🔗另開新分頁</a></td>
+<table width="100%" height="100%">
+<tr width='100px'>
+    <th style='font-weight:bold;color:#fff;border: 1px solid #ddd;background-color:#100f14'>快捷鍵功能</th>
+    <td style='color:#fff;border: 1px solid #ddd;background-color:#bf1827'><font color=>Key F<br>
+    全螢幕放映</td>
+    <td>Key O<br>投影片預覽</td>
+    <td>Key S<br>簡報者檢視畫面</td>
+</tr>
+<tr height='500px'>
+    <th>簡報</th>
+    <td  colspan = '3'><iframe src="../../../../ppt/Hexo/Hexo.html" width="100%" height="100%" style="border-color:#100f14;border-width:3px;border-style:solid;"></iframe></td>
+</tr>
+</table>
 
 ## [懶人包]
 
