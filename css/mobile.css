@@ -94,10 +94,10 @@
     content: "\e98b";
   }
   .full-toc #rocket:hover::before {
-    color: #283444;
+    color: #42b983;
   }
   .full-toc #rocket.launch:before {
-    color: #449fdb;
+    color: #42b983;
   }
 }
 @media screen and (max-width: 426px) {
@@ -240,6 +240,9 @@
   }
   .full-toc #rocket {
     right: -7px;
+  }
+  .full-toc #rocket .post-toc-rocket {
+    opacity: 0.7;
   }
   .shang_box {
     width: 100%;
