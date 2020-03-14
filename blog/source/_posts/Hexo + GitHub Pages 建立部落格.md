@@ -40,7 +40,6 @@ Git Clone `{yourName}.github.io`至 `{localPath}`本機目錄，打開Git命令�
 ```
 git --version                           #檢查git安裝是否完成(可省略)
 npm --version                           #檢查npm安裝是否完成(可省略)
-npm --version                           #檢查npm安裝是否完成(可省略)
 npm install hexo-cli --global           #安裝hexo(--global參數 : 安装套件會放在/user/local)
 hexo --version                          #檢查hexo安裝是否完成(可省略)
 hexo init blog                          #初始化部落格到新資料夾blog

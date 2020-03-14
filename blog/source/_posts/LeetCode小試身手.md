@@ -17,7 +17,9 @@ Top 5 best programming languages for 2020 by [TIOBE](https://www.tiobe.com/tiobe
 5. C#
 
 ## Why LeetCode?
-solve interview questions.
+~~solve interview questions~~
+improve coding skills!
+
 
 ## Question
 [[Easy] 1342. Number of Steps to Reduce a Number to Zero](https://leetcode.com/problems/number-of-steps-to-reduce-a-number-to-zero/)
